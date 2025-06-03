@@ -1,0 +1,379 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace Unity.Services.Analytics
+{
+    public class AcquisitionSourceEvent : Event
+    {
+        public string AcquisitionCampaignId { set; }
+        public string AcquisitionCampaignName { set; }
+        public string AcquisitionCampaignType { set; }
+        public string AcquisitionChannel { set; }
+        public float AcquisitionCost { set; }
+        public string AcquisitionCostCurrency { set; }
+        public string AcquisitionCreativeId { set; }
+        public string AcquisitionNetwork { set; }
+        public string AcquisitionProvider { set; }
+        public AcquisitionSourceEvent() {}
+        public override void Validate();
+    }
+
+    [System.Obsolete(@"Please create an AcquisitionSourceEvent and use RecordEvent(...) instead.")] public class AcquisitionSourceParameters
+    {
+        public string CampaignId;
+        public string CampaignName;
+        public string CampaignType;
+        public string Channel;
+        public System.Nullable<float> Cost;
+        public string CostCurrency;
+        public string CreativeId;
+        public string Network;
+        public string Provider;
+        public AcquisitionSourceParameters() {}
+    }
+
+    public enum AdCompletionStatus
+    {
+        Completed = 0,
+        Incomplete = 2,
+        Partial = 1,
+    }
+
+    public class AdImpressionEvent : Event
+    {
+        public AdCompletionStatus AdCompletionStatus { set; }
+        public double AdEcpmUsd { set; }
+        public bool AdHasClicked { set; }
+        public string AdImpressionId { set; }
+        public long AdLengthMs { set; }
+        public string AdMediaType { set; }
+        public AdProvider AdProvider { set; }
+        public string AdSdkVersion { set; }
+        public string AdSource { set; }
+        public string AdStatusCallback { set; }
+        public string AdStoreDestinationId { set; }
+        public long AdTimeCloseButtonShownMs { set; }
+        public long AdTimeWatchedMs { set; }
+        public string PlacementId { set; }
+        public string PlacementName { set; }
+        public AdPlacementType PlacementType { set; }
+        public AdImpressionEvent() {}
+        public override void Validate();
+    }
+
+    [System.Obsolete(@"Please create an AdImpressionEvent and use RecordEvent(...) instead.")] public struct AdImpressionParameters
+    {
+        public AdCompletionStatus AdCompletionStatus;
+        public System.Nullable<double> AdEcpmUsd;
+        public System.Nullable<bool> AdHasClicked;
+        public string AdImpressionID;
+        public System.Nullable<long> AdLengthMs;
+        public string AdMediaType;
+        public AdProvider AdProvider;
+        public string AdSource;
+        public string AdStatusCallback;
+        public string AdStoreDstID;
+        public System.Nullable<long> AdTimeCloseButtonShownMs;
+        public System.Nullable<long> AdTimeWatchedMs;
+        public string PlacementID;
+        public string PlacementName;
+        public System.Nullable<AdPlacementType> PlacementType;
+        public string SdkVersion;
+    }
+
+    public enum AdPlacementType
+    {
+        BANNER = 0,
+        INTERSTITIAL = 2,
+        OTHER = 3,
+        REWARDED = 1,
+    }
+
+    public enum AdProvider
+    {
+        AdColony = 0,
+        AdMob = 1,
+        Amazon = 2,
+        AppLovin = 3,
+        ChartBoost = 4,
+        Facebook = 5,
+        Fyber = 6,
+        Hyprmx = 7,
+        Inmobi = 8,
+        IrnSource = 14,
+        Maio = 9,
+        Other = 15,
+        Pangle = 10,
+        Tapjoy = 11,
+        UnityAds = 12,
+        Vungle = 13,
+    }
+
+    public static class AnalyticsService
+    {
+        public static IAnalyticsService Instance { get; }
+    }
+
+    public class ConsentCheckException : Unity.Services.Core.RequestFailedException
+    {
+        [UnityEngine.Scripting.Preserve] public ConsentCheckExceptionReason Reason { get; }
+        public ConsentCheckException(ConsentCheckExceptionReason reason, int errorCode, string message, System.Exception innerException) {}
+    }
+
+    [UnityEngine.Scripting.Preserve] public enum ConsentCheckExceptionReason
+    {
+        ConsentFlowNotKnown = 4,
+        DeserializationIssue = 1,
+        InvalidConsentFlow = 3,
+        NoInternetConnection = 2,
+        Unknown = 0,
+    }
+
+    public class CustomEvent : Event, System.Collections.IEnumerable
+    {
+        public object this[string key] { set; }
+        public CustomEvent(string name) {}
+        public void Add(string key, object value);
+        public System.Collections.IEnumerator GetEnumerator();
+    }
+
+    public abstract class Event
+    {
+        protected Event(string name) {}
+        protected bool ParameterHasBeenSet(string name);
+        public virtual void Reset();
+        protected void SetParameter(string name, bool value);
+        protected void SetParameter(string name, double value);
+        protected void SetParameter(string name, int value);
+        protected void SetParameter(string name, long value);
+        protected void SetParameter(string name, float value);
+        protected void SetParameter(string name, string value);
+        public virtual void Validate();
+    }
+
+    public interface IAnalyticsService
+    {
+        public string PrivacyUrl { get; }
+        public string SessionID { get; }
+        [System.Obsolete(@"Please create an AcquisitionSourceEvent and use RecordEvent(...) instead.")] public void AcquisitionSource(AcquisitionSourceParameters acquisitionSourceParameters);
+        [System.Obsolete(@"Please create an AdImpressionEvent and use RecordEvent(...) instead.")] public void AdImpression(AdImpressionParameters parameters);
+        [System.Obsolete(@"This method is part of the old consent flow and should no longer be used. For more information, please see the migration guide: https://docs.unity.com/ugs/en-us/manual/analytics/manual/sdk5-migration-guide")] public System.Threading.Tasks.Task<System.Collections.Generic.List<string>> CheckForRequiredConsents();
+        public long ConvertCurrencyToMinorUnits(string currencyCode, double value);
+        [System.Obsolete(@"Please use RecordEvent(string) instead.")] public void CustomData(string eventName);
+        [System.Obsolete(@"Please use RecordEvent(...) instead, by passing in either an instance of CustomEvent, or an instance of your own sub-class of Event.")] public void CustomData(string eventName, System.Collections.Generic.IDictionary<string, object> eventParams);
+        public void Flush();
+        public string GetAnalyticsUserID();
+        [System.Obsolete(@"This method is part of the old consent flow and should no longer be used. Please use StopDataCollection() and/or RequestDataDeletion() instead as appropriate. For more information, please see the migration guide: https://docs.unity.com/ugs/en-us/manual/analytics/manual/sdk5-migration-guide")] public void OptOut();
+        [System.Obsolete(@"This method is part of the old consent flow and should no longer be used. For more information, please see the migration guide: https://docs.unity.com/ugs/en-us/manual/analytics/manual/sdk5-migration-guide")] public void ProvideOptInConsent(string identifier, bool consent);
+        public void RecordEvent(string eventName);
+        public void RecordEvent(Event e);
+        [System.Obsolete(@"This mechanism is no longer supported and will be removed in a future version. Use the new Core IAnalyticsStandardEventComponent API instead.")] public void RecordInternalEvent(Internal.Event eventToRecord);
+        public void RequestDataDeletion();
+        [System.Obsolete(@"This method is part of the old consent flow and should no longer be used. For more information, please see the migration guide: https://docs.unity.com/ugs/en-us/manual/analytics/manual/sdk5-migration-guide")] public System.Threading.Tasks.Task SetAnalyticsEnabled(bool enabled);
+        public void StartDataCollection();
+        public void StopDataCollection();
+        [System.Obsolete(@"Please create a TransactionEvent and use RecordEvent(...) instead.")] public void Transaction(TransactionParameters parameters);
+        [System.Obsolete(@"Please create a TransactionFailedEvent and use RecordEvent(...) instead.")] public void TransactionFailed(TransactionFailedParameters parameters);
+    }
+
+    [System.Obsolete(@"Please create a TransactionEvent/TransactionFailedEvent and use RecordEvent(...) instead. There is a replacement TransactionItem class there.")] public struct Item
+    {
+        public long ItemAmount;
+        public string ItemName;
+        public string ItemType;
+    }
+
+    [System.Obsolete(@"Please create a TransactionEvent/TransactionFailedEvent and use RecordEvent(...) instead. The Product container used by ProductsSpent and ProductsReceived has been replaced by SpentItems/SpentRealCurrency/SpentVirtualCurrencies/etc fields.")] public struct Product
+    {
+        public System.Collections.Generic.List<Item> Items;
+        public System.Nullable<RealCurrency> RealCurrency;
+        public System.Collections.Generic.List<VirtualCurrency> VirtualCurrencies;
+    }
+
+    [System.Obsolete(@"Please create a TransactionEvent/TransactionFailedEvent and use RecordEvent(...) instead. There is a replacement TransactionRealCurrency class there.")] public struct RealCurrency
+    {
+        public long RealCurrencyAmount;
+        public string RealCurrencyType;
+    }
+
+    public static class SdkVersion
+    {
+        public static readonly string SDK_VERSION = @"5.1.0";
+    }
+
+    public class TransactionEvent : Event
+    {
+        public string PaymentCountry { set; }
+        public string ProductId { set; }
+        public System.Collections.Generic.List<TransactionItem> ReceivedItems { get; }
+        public TransactionRealCurrency ReceivedRealCurrency { get; set; }
+        public System.Collections.Generic.List<TransactionVirtualCurrency> ReceivedVirtualCurrencies { get; }
+        public System.Collections.Generic.List<TransactionItem> SpentItems { get; }
+        public TransactionRealCurrency SpentRealCurrency { get; set; }
+        public System.Collections.Generic.List<TransactionVirtualCurrency> SpentVirtualCurrencies { get; }
+        public string StoreId { set; }
+        public string StoreItemId { set; }
+        public string StoreItemSkuId { set; }
+        public string StoreSourceId { set; }
+        public string TransactionId { set; }
+        public string TransactionName { set; }
+        public string TransactionReceipt { set; }
+        public string TransactionReceiptSignature { set; }
+        public TransactionServer TransactionServer { set; }
+        public TransactionType TransactionType { set; }
+        public string TransactorID { set; }
+        public TransactionEvent() {}
+        protected TransactionEvent(string name) {}
+        public override void Reset();
+        public override void Validate();
+    }
+
+    public class TransactionFailedEvent : TransactionEvent
+    {
+        public string FailureReason { set; }
+        public TransactionFailedEvent() {}
+        public override void Validate();
+    }
+
+    [System.Obsolete(@"Please create a TransactionFailedEvent and use RecordEvent(...) instead.")] public struct TransactionFailedParameters
+    {
+        public string AmazonUserID;
+        public System.Nullable<long> EngagementID;
+        public string FailureReason;
+        public string GameStoreID;
+        public System.Nullable<bool> IsInitiator;
+        public string PaymentCountry;
+        public string ProductID;
+        public Product ProductsReceived;
+        public Product ProductsSpent;
+        public System.Nullable<long> RevenueValidated;
+        public string StoreID;
+        public string StoreItemID;
+        public string StoreItemSkuID;
+        public string StoreSourceID;
+        public string TransactionID;
+        public string TransactionName;
+        public System.Nullable<TransactionServer> TransactionServer;
+        public TransactionType TransactionType;
+    }
+
+    public class TransactionItem
+    {
+        public long ItemAmount;
+        public string ItemName;
+        public string ItemType;
+        public TransactionItem() {}
+    }
+
+    [System.Obsolete(@"Please create a TransactionEvent and use RecordEvent(...) instead.")] public struct TransactionParameters
+    {
+        public string PaymentCountry;
+        public string ProductID;
+        public Product ProductsReceived;
+        public Product ProductsSpent;
+        public System.Nullable<long> RevenueValidated;
+        public string StoreID;
+        public string StoreItemID;
+        public string StoreItemSkuID;
+        public string StoreSourceID;
+        public string TransactionID;
+        public string TransactionName;
+        public string TransactionReceipt;
+        public string TransactionReceiptSignature;
+        public System.Nullable<TransactionServer> TransactionServer;
+        public TransactionType TransactionType;
+        public string TransactorID;
+    }
+
+    public class TransactionRealCurrency
+    {
+        public long RealCurrencyAmount;
+        public string RealCurrencyType;
+        public TransactionRealCurrency() {}
+    }
+
+    public enum TransactionServer
+    {
+        AMAZON = 1,
+        APPLE = 0,
+        GOOGLE = 2,
+        VALVE = 3,
+    }
+
+    public enum TransactionType
+    {
+        INVALID = 0,
+        PURCHASE = 2,
+        SALE = 1,
+        TRADE = 3,
+    }
+
+    public class TransactionVirtualCurrency
+    {
+        public long VirtualCurrencyAmount;
+        public string VirtualCurrencyName;
+        public VirtualCurrencyType VirtualCurrencyType;
+        public TransactionVirtualCurrency() {}
+    }
+
+    [System.Obsolete(@"Please create a TransactionEvent/TransactionFailedEvent and use RecordEvent(...) instead. There is a replacement TransactionVirtualCurrency class there.")] public struct VirtualCurrency
+    {
+        public long VirtualCurrencyAmount;
+        public string VirtualCurrencyName;
+        public VirtualCurrencyType VirtualCurrencyType;
+    }
+
+    public enum VirtualCurrencyType
+    {
+        GRIND = 0,
+        PREMIUM = 1,
+        PREMIUM_GRIND = 2,
+    }
+}
+
+namespace Unity.Services.Analytics.Internal
+{
+    [System.Obsolete(@"This mechanism is no longer supported and will be removed in a future version. Use the new Core IAnalyticsStandardEventComponent API instead.")] public class Event
+    {
+        public string Name { get; }
+        public EventData Parameters { get; }
+        public System.Nullable<int> Version { get; }
+        public Event(string name, System.Nullable<int> version) {}
+    }
+
+    [System.Obsolete(@"This mechanism is deprecated. Use AnalyticsService.Instance.CustomData(...) instead.")] public class EventData
+    {
+        public System.Collections.Generic.Dictionary<string, object> Data { get; }
+        public void AddBatteryLoad();
+        public void AddBuildGuuid();
+        public void AddClientVersion();
+        public void AddConnectionType();
+        public void AddGameBundleID();
+        public void AddPlatform();
+        public void AddStdParamData(string sdkMethod, string uasID);
+        public void AddUserCountry();
+        public void Set(string key, bool value);
+        public void Set(string key, double value);
+        public void Set(string key, int value);
+        public void Set(string key, long value);
+        public void Set(string key, object value);
+        public void Set(string key, float value);
+        public void Set(string key, string value);
+    }
+}
+
+namespace Unity.Services.Analytics.Internal.Platform
+{
+    [System.Obsolete(@"This should not be public. Do not use it.")] public static class UserCountry
+    {
+        [System.Obsolete(@"This should not be public. Do not use it.")] public static string Name();
+    }
+}
+
+namespace Unity.Services.Analytics.Platform
+{
+    [System.Obsolete(@"Should not be public. Do not use this.")] public static class Runtime
+    {
+        [System.Obsolete(@"Should not be public. Do not use this.")] public static string Name();
+    }
+}

@@ -1,0 +1,352 @@
+{
+  "context": {
+    "projectPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Packages",
+    "unityVersion": "6000.0.18f1"
+  },
+  "inputs": [
+    "/Users/diego/Downloads/ZigZag-master/ZigZag/Packages/manifest.json",
+    "/Users/diego/Downloads/ZigZag-master/ZigZag/Packages/packages-lock.json"
+  ],
+  "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.2d.sprite",
+      "fingerprint": "b0dd32b64256b7cc7ae5c0e91e62d40c380b6581",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.2d.tilemap@1.0.0": {
+      "name": "com.unity.2d.tilemap",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.2d.tilemap",
+      "fingerprint": "cf9771037a2571b3bca1d1d81e6b255605ad023d",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.ads@4.4.2": {
+      "name": "com.unity.ads",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ads",
+      "fingerprint": "a7b997f68a1d40387ca4d33fc75578709c140a37",
+      "editorCompatibility": "2018.4.18f1",
+      "version": "4.4.2",
+      "source": "registry"
+    },
+    "com.unity.ai.navigation@2.0.3": {
+      "name": "com.unity.ai.navigation",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ai.navigation",
+      "fingerprint": "77c4f088a6d6359f8000ae02db777b4acb5a0f55",
+      "editorCompatibility": "2023.2.0a18",
+      "version": "2.0.3",
+      "source": "registry"
+    },
+    "com.unity.analytics@3.8.1": {
+      "name": "com.unity.analytics",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.analytics",
+      "fingerprint": "6cc66d58ac08950316d3b86a26c92187aca1ddb0",
+      "editorCompatibility": "2019.3.0a1",
+      "version": "3.8.1",
+      "source": "registry"
+    },
+    "com.unity.collab-proxy@2.4.4": {
+      "name": "com.unity.collab-proxy",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.collab-proxy",
+      "fingerprint": "f073ab5b7d4916dd0953caa6b29a435a4e9a3df8",
+      "editorCompatibility": "2020.3.48f1",
+      "version": "2.4.4",
+      "source": "registry"
+    },
+    "com.unity.ide.rider@3.0.31": {
+      "name": "com.unity.ide.rider",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ide.rider",
+      "fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd",
+      "editorCompatibility": "2019.2.6f1",
+      "version": "3.0.31",
+      "source": "registry"
+    },
+    "com.unity.ide.visualstudio@2.0.22": {
+      "name": "com.unity.ide.visualstudio",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ide.visualstudio",
+      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
+      "editorCompatibility": "2019.4.25f1",
+      "version": "2.0.22",
+      "source": "registry"
+    },
+    "com.unity.purchasing@4.12.2": {
+      "name": "com.unity.purchasing",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.purchasing",
+      "fingerprint": "649c6c7b3b1b6277839041f4987c0a1e66176678",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "4.12.2",
+      "source": "registry"
+    },
+    "com.unity.test-framework@1.4.5": {
+      "name": "com.unity.test-framework",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.test-framework",
+      "fingerprint": "0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8",
+      "editorCompatibility": "2019.4.0a10",
+      "version": "1.4.5",
+      "source": "registry"
+    },
+    "com.unity.timeline@1.8.7": {
+      "name": "com.unity.timeline",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.timeline",
+      "fingerprint": "c58b4ee65782ad38338e29f7ee67787cb6998f04",
+      "editorCompatibility": "2019.3.0a1",
+      "version": "1.8.7",
+      "source": "registry"
+    },
+    "com.unity.ugui@2.0.0": {
+      "name": "com.unity.ugui",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ugui",
+      "fingerprint": "b0e0b1c828561e8a0d130fa0e71078e9684ef47f",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "2.0.0",
+      "source": "builtin"
+    },
+    "com.unity.xr.legacyinputhelpers@2.1.10": {
+      "name": "com.unity.xr.legacyinputhelpers",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.xr.legacyinputhelpers",
+      "fingerprint": "4716850f3b0c9a398c68cd272d279e68245c49a7",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.1.10",
+      "source": "registry"
+    },
+    "com.unity.modules.accessibility@1.0.0": {
+      "name": "com.unity.modules.accessibility",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.accessibility",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.ai@1.0.0": {
+      "name": "com.unity.modules.ai",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.ai",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.androidjni@1.0.0": {
+      "name": "com.unity.modules.androidjni",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.androidjni",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.animation@1.0.0": {
+      "name": "com.unity.modules.animation",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.animation",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.assetbundle@1.0.0": {
+      "name": "com.unity.modules.assetbundle",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.assetbundle",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.audio@1.0.0": {
+      "name": "com.unity.modules.audio",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.audio",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.cloth@1.0.0": {
+      "name": "com.unity.modules.cloth",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.cloth",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.director@1.0.0": {
+      "name": "com.unity.modules.director",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.director",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.imageconversion@1.0.0": {
+      "name": "com.unity.modules.imageconversion",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.imageconversion",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.imgui@1.0.0": {
+      "name": "com.unity.modules.imgui",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.imgui",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.jsonserialize@1.0.0": {
+      "name": "com.unity.modules.jsonserialize",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.jsonserialize",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.particlesystem@1.0.0": {
+      "name": "com.unity.modules.particlesystem",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.particlesystem",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.physics@1.0.0": {
+      "name": "com.unity.modules.physics",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.physics",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.physics2d@1.0.0": {
+      "name": "com.unity.modules.physics2d",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.physics2d",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.screencapture@1.0.0": {
+      "name": "com.unity.modules.screencapture",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.screencapture",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.terrain@1.0.0": {
+      "name": "com.unity.modules.terrain",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.terrain",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.terrainphysics@1.0.0": {
+      "name": "com.unity.modules.terrainphysics",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.terrainphysics",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.tilemap@1.0.0": {
+      "name": "com.unity.modules.tilemap",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.tilemap",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.ui@1.0.0": {
+      "name": "com.unity.modules.ui",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.ui",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.uielements@1.0.0": {
+      "name": "com.unity.modules.uielements",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.uielements",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.umbra@1.0.0": {
+      "name": "com.unity.modules.umbra",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.umbra",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unityanalytics@1.0.0": {
+      "name": "com.unity.modules.unityanalytics",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unityanalytics",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unitywebrequest@1.0.0": {
+      "name": "com.unity.modules.unitywebrequest",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unitywebrequest",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestassetbundle",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unitywebrequestaudio@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestaudio",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unitywebrequestaudio",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unitywebrequesttexture@1.0.0": {
+      "name": "com.unity.modules.unitywebrequesttexture",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unitywebrequesttexture",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.unitywebrequestwww@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestwww",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.unitywebrequestwww",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.vehicles@1.0.0": {
+      "name": "com.unity.modules.vehicles",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.vehicles",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.video@1.0.0": {
+      "name": "com.unity.modules.video",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.video",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.vr@1.0.0": {
+      "name": "com.unity.modules.vr",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.vr",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.wind@1.0.0": {
+      "name": "com.unity.modules.wind",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.wind",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.xr@1.0.0": {
+      "name": "com.unity.modules.xr",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.xr",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.subsystems@1.0.0": {
+      "name": "com.unity.modules.subsystems",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.subsystems",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.hierarchycore@1.0.0": {
+      "name": "com.unity.modules.hierarchycore",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.modules.hierarchycore",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.ext.nunit@2.0.5": {
+      "name": "com.unity.ext.nunit",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.ext.nunit",
+      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.5",
+      "source": "registry"
+    },
+    "com.unity.services.core@1.13.0": {
+      "name": "com.unity.services.core",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.services.core",
+      "fingerprint": "ebe452e552b92964f64e438bdc2e6a7d850c66cc",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.13.0",
+      "source": "registry"
+    },
+    "com.unity.services.analytics@5.1.1": {
+      "name": "com.unity.services.analytics",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.services.analytics",
+      "fingerprint": "3755d89791d460e409a5f582448867001b79821f",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "5.1.1",
+      "source": "registry"
+    },
+    "com.unity.nuget.newtonsoft-json@3.2.1": {
+      "name": "com.unity.nuget.newtonsoft-json",
+      "resolvedPath": "/Users/diego/Downloads/ZigZag-master/ZigZag/Library/PackageCache/com.unity.nuget.newtonsoft-json",
+      "fingerprint": "74deb55db2a0c29ddfda576608bcb86abbd13ee6",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "3.2.1",
+      "source": "registry"
+    }
+  }
+}

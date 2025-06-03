@@ -1,0 +1,51 @@
+{
+  "name": "com.unity.services.analytics",
+  "displayName": "Analytics",
+  "version": "5.1.1",
+  "unity": "2019.4",
+  "description": "The Unity Analytics package automatically collects core events and user properties when someone uses your game or application, and enables you to track specific in-game actions your user performs by defining custom events. The data collected from this package is surfaced in the Unity dashboard where you can use it to gather user insights, segment your player base and make informed decisions around the optimization of your game.",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.services.core": "1.12.5"
+  },
+  "samples": [
+    {
+      "displayName": "Standard Events",
+      "description": "Example of using the predefined standardized products, including a demo scene",
+      "path": "Samples~/StandardEvents"
+    }
+  ],
+  "_upm": {
+    "gameService": {
+      "genericDashboardUrl": "https://dashboard.unity3d.com/analytics",
+      "projectDashboardUrl": "https://dashboard.unity3d.com/organizations/{0}/projects/{1}/analytics/events",
+      "projectDashboardUrlType": "OrganizationKeyAndProjectGuid",
+      "configurePath": "Project/Services/Analytics - Gaming Services"
+    },
+    "supportedPlatforms": [
+      "Android",
+      "iOS",
+      "Linux",
+      "Mac",
+      "PC",
+      "Windows 8.1 Universal",
+      "Windows 10 Universal",
+      "WebGL"
+    ],
+    "changelog": "### Added\n\n- Added Apple Privacy Manifest\n\n### Changed\n\n* Updated `com.unity.services.core` dependency to 1.12.5 which contains Apple Privacy Manifest"
+  },
+  "relatedPackages": {
+    "com.unity.services.analytics.tests": "5.1.1"
+  },
+  "upmCi": {
+    "footprint": "dcd7b7179caea2968e4d7e93753a6c22d8aa8815"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.analytics@5.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "a2500ef2ce79a436d6e5f3f6acde6214eb5a089f"
+  },
+  "_fingerprint": "3755d89791d460e409a5f582448867001b79821f"
+}
